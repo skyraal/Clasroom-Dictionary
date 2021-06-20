@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Classroom Dictionary - dictionary</title>
+		<link rel="stylesheet" href="common.css" />
+		<link rel="stylesheet" href="dictionary.css" />
+
+		<script defer src="dictionary.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./school.svg" type="image/x-icon" />
+	</head>
+	<body class="preload">
+		<header>
+			<nav>
+				<h1><a href="./index.html" class="logo">Classroom Dictionary</a></h1>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="./index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="./dictionary.html" class="nav-link">Dictionary</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./flashcards.html">Flashcards</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./signlanguage.html">Sign language</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="dictionary-main">
+			<h2 class="dictionary-title">Dictionary</h2>
+			<button class="add-word">+</button>
+			<ul class="dictionary">
+				<li class="word">
+					<button class="word-button shadow" data-word="shadow">shadow</button>
+				</li>
+				<li class="word">
+					<button class="word-button excuse-me" data-word="excuse me">
+						excuse me
+					</button>
+				</li>
+				<li class="word">
+					<button class="word-button motivated" data-word="motivated">
+						motivated
+					</button>
+				</li>
+				<li class="word">
+					<button class="word-button mice" data-word="mice">mice</button>
+				</li>
+				<li class="word">
+					<button class="word-button ring" data-word="ring">ring</button>
+				</li>
+				<li class="word">
+					<button class="word-button shout" data-word="shout">shout</button>
+				</li>
+			</ul>
+			<div class="add-form-wrapper">
+				<div class="form-bg"></div>
+				<h3>Ask about a new word</h3>
+				<button type="button" class="exit-add">X</button>
+				<form class="add-form">
+					<div class="form-pair">
+						<label for="word" class="add-label">Word: </label
+						><input required type="text" id="word" class="add-text-field" />
+					</div>
+          <button type="button" class="signlanguage-button">Upload word in sign language</button>
+					<div class="form-pair">
+						<label for="context" class="add-label">Context: </label
+						><textarea
+							required
+							id="context"
+							class="add-text-field"
+							cols="30"
+							rows="5"
+						></textarea>
+					</div>
+					<div class="form-pair">
+						<label for="language" class="add-label">Preferred Language: </label
+						><input required type="text" id="language" class="add-text-field" />
+					</div>
+					<button class="submit-add" type="submit">Submit</button>
+				</form>
+			</div>
+			<article class="word-info shadow">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>shadow</h3>
+					<p class="context">
+						<span class="info-title">Context: </span>
+						<span class="context-content"
+							>"She cast a long, long shadow." from Everyday English in
+							Practice, p.33 paragraph 2</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Classroom language: </span>English
+					</p>
+					<p class="p-language">
+						<span class="info-title">Preferred language: </span>
+						<span class="language-content">Cantonese</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Help define this word:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+					<button type="button" class="star">
+						<img src="./star_border_white.svg" alt="star this word" />
+					</button>
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info excuse-me">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>excuse me</h3>
+					<p class="context">
+						<span class="info-title">Context: </span>
+						<span class="context-content"
+							>"Excuse me, what do you think you are doing?" from Everyday
+							English in Practice, p.45 paragraph 3</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Classroom language: </span>English
+					</p>
+					<p class="p-language">
+						<span class="info-title">Preferred language: </span>
+						<span class="language-content">Cantonese</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Help define this word:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+					<button type="button" class="star">
+						<img src="./star_border_white.svg" alt="star this word" />
+					</button>
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info motivated">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>motivated</h3>
+					<p class="context">
+						<span class="info-title">Context: </span>
+						<span class="context-content"
+							>"Are you motivated today?" from Everyday English in Practice,
+							p.10 paragraph 1</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Classroom language: </span>English
+					</p>
+					<p class="p-language">
+						<span class="info-title">Preferred language: </span>
+						<span class="language-content">Spanish</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Help define this word:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+					<button type="button" class="star">
+						<img src="./star_border_white.svg" alt="star this word" />
+					</button>
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info mice">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>mice</h3>
+					<p class="context">
+						<span class="info-title">Context: </span>
+						<span class="context-content"
+							>"A little mice" from Everyday English in Practice, p.13 paragraph
+							4</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Classroom language: </span>English
+					</p>
+					<p class="p-language">
+						<span class="info-title">Preferred language: </span>
+						<span class="language-content">English</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Help define this word:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+					<button type="button" class="star">
+						<img src="./star_border_white.svg" alt="star this word" />
+					</button>
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info ring">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>ring</h3>
+					<p class="context">
+						<span class="info-title">Context: </span>
+						<span class="context-content"
+							>"The bell rings loudly" from Everyday English in Practice, p.13
+							paragraph 4</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Classroom language: </span>English
+					</p>
+					<p class="p-language">
+						<span class="info-title">Preferred language: </span>
+						<span class="language-content">English</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Help define this word:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+					<button type="button" class="star">
+						<img src="./star_border_white.svg" alt="star this word" />
+					</button>
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info shout">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>shout</h3>
+					<p class="context">
+						<span class="info-title">Context: </span>
+						<span class="context-content"
+							>"Please don't shout in a public space." from Everyday English in
+							Practice, p.16 paragraph 4</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Classroom language: </span>English
+					</p>
+					<p class="p-language">
+						<span class="info-title">Preferred language: </span>
+						<span class="language-content">Mandarin</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Help define this word:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+					<button type="button" class="star">
+						<img src="./star_border_white.svg" alt="star this word" />
+					</button>
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+		</main>
+		<footer class="dictionary-footer">
+			Created by Cyra Alesha, Reeva Khokhar and Yinuo Meng.
+		</footer>
+	</body>
+</html>

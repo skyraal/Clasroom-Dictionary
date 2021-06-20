@@ -1,0 +1,81 @@
+main {
+	padding: 3rem;
+}
+
+.flashcard {
+	background: #e8e2ec;
+	max-width: 700px;
+	width: 90%;
+	margin: auto;
+	min-height: 50vh;
+	box-shadow: 7px 7px 7px rgb(207, 205, 205);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+.word {
+	font-size: 4rem;
+}
+
+.word-hidden {
+	display: none;
+}
+
+.definition {
+	display: none;
+	font-size: 2rem;
+}
+
+.definition-show {
+	display: block;
+}
+
+.star {
+	background: none;
+	border: none;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.star:hover {
+	transform: scale(1.2);
+}
+
+.buttons {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5rem;
+}
+
+.buttons button {
+	margin: 0 1.5rem;
+	font-size: 1.5rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.buttons button:hover {
+	transform: scale(1.2);
+}
+
+button.flip {
+	background: #845c9b;
+	padding: 0 2rem;
+	color: white;
+	box-shadow: 0 3px 5px rgb(153, 152, 152);
+	border-radius: 30px;
+}
+
+button.flip:hover {
+	transform: none;
+	background: #aa77c7;
+}

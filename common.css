@@ -1,0 +1,140 @@
+html {
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	background: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+.hp {
+	font-size: 6rem;
+	font-weight: 700;
+  margin-top: 100px;
+	text-align: center;
+	color: #6b3a88;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	background: #6b3a88;
+	color: white;
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 3px 10px rgb(184, 178, 178);
+}
+
+.logo {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+.nav-list {
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-left: 0.3rem;
+	font-size: 1.1rem;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem;
+	border-radius: 15px;
+	transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+	background-color: #845c9b;
+}
+
+footer {
+	background: #23112e;
+	color: white;
+	padding: 1rem;
+	margin-top: auto;
+}
+
+
+
+.content {
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.homebutton {
+  background-color: #845c9b;
+  padding: 25px 35px;
+  border: none;
+  border-radius: 55px;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.button {
+  border-radius: 50px;
+  background-color:#845c9b;
+;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 33px;
+  padding: 28px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 auto
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.landingpage {
+  background-image: url(img/clasroomdict.png);
+  background-size: cover;
+}
